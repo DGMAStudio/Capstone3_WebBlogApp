@@ -1,0 +1,43 @@
+<%-include("partials/header-create.ejs")%>
+<section id="create">
+    
+<%if(locals.idToEdit){%>
+    <div class="edit-create">
+        <form action="/edit" method="POST">
+            <h2 id="create-headline">Edit Post</h2>
+            <label for="title" id="title-label">Edit Title:</label> </br>
+            <input type="text" name="title" class="title" value="<%=posts[idToEdit].title%>" autofocus required></br>
+    
+            <label for="content" class="content-label">Edit Content:</label> </br>
+            <textarea name="content" placeholder="" class="content">
+                <%=posts[idToEdit].content%>
+            </textarea> </br>
+    
+            <label for="author" class="author-label">Edit the publisher's name:</label> </br>
+            <input type="text" name="author" class="author" value="<%=posts[idToEdit].author%>" required></br>
+    
+            <input type="submit" value="Finished Post #<%=idToEdit%>" name="publish-edit" id="publish-button">
+        </form>
+    </div>
+<%}else {%>
+    <div class="edit-create">
+        <form action="/" method="POST">
+            <h2 id="create-headline">Create New Post</h2>
+            <label for="title" class="title-label">Enter New Title:</label> </br>
+            <input type="text" name="title" class="title" placeholder="title..." autofocus required></br>
+    
+            <label for="content" class="content-label">Enter New Content:</label> </br>
+            <textarea name="content" placeholder="lorem ipsum..." class="content">
+    
+            </textarea> </br>
+    
+            <label for="author" class="author-label">Enter the publisher's name:</label> </br>
+            <input type="text" name="author" class="author" placeholder="Joe..." required></br>
+    
+            <input type="submit" value="Publish Post" name="publish-create" id="publish-button">
+        </form>
+    </div>
+        <%}%>
+</section>
+
+<%-include("partials/footer.ejs")%>

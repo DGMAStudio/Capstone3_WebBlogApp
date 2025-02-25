@@ -1,0 +1,214 @@
+#header {
+  background-color: #493D9E;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: white solid 1px;
+}
+
+html {
+  background-color:#493D9E;
+}
+
+#home {
+  background-color: #493D9E;
+}
+
+.big-header {
+  color:white;
+  font-family: "Passion One", serif;
+  letter-spacing: 5px;
+  font-style: normal;
+  font-weight:bold;
+  -webkit-font-smoothing: antialiased;
+  font-size: 4rem;
+  margin-bottom:0px;
+}
+
+/*CREATE PAGE STYLING*/
+#create {
+  height:100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* EACH POST STYLING */
+.posts-list {
+  list-style-type: none;
+}
+
+.post-title {
+  font-weight:bold;
+  font-size:2rem;
+}
+
+.post-border {
+  border-radius: 10px;
+  border: #B2A5FF solid 5px;
+  padding-top:0px;
+  padding-left:20px;
+  padding-right:40px;
+  padding-bottom:20px;
+  margin-bottom: 10px;
+  background-color:#FFFDF2 ;
+  text-align: center;
+}
+
+.all-posts {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.post-content {
+  font-weight: normal;
+  font-size:1rem;
+}
+
+.centered-button {
+  display: flex;
+  justify-content:center;
+}
+
+#delete-button {
+  background-color: #961c01;
+  color:white;
+  border-radius: 20px;
+  margin-left:10px;
+  border:rgb(89, 2, 2) 3px solid;
+  padding:5px;
+  font-size: 20px;
+  font-family: "Passion One", serif;
+  letter-spacing: 2px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#delete-button:hover {
+  background-color: rgb(89, 2, 2);
+}
+
+#edit-button {
+  background-color: #4B70F5;
+  color:white;
+  border-radius: 20px;
+  border:#2f1db5 solid 3px;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+  font-size: 20px;
+  font-family: "Passion One", serif;
+  letter-spacing: 2px;
+}
+
+#edit-button:hover {
+  background-color: #2f1db5;
+}
+
+.post-buttons {
+  display: flex;
+  margin-top:10px;
+  justify-content: center;
+}
+
+.create-post {
+  border-radius: 10px;
+  border: #B2A5FF solid 5px;
+  margin-bottom: 10px;
+  background-color:#FFFDF2 ;
+  font-family: "Passion One", serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.create-post:hover {
+  background-color: #B2A5FF;
+  color:white;
+}
+
+/*CREATE - EDIT POST SCREEN STYLING*/
+#create {
+  display:flex;
+  justify-content: center;
+  text-align: center;
+  padding-top:100px;
+  background-color: #493D9E;
+}
+
+#create-headline {
+  font-family: "Passion One", serif;
+  letter-spacing: 2px;
+  font-size: 5rem;
+  color:white;
+  border-bottom: white 1px solid;
+}
+
+.title-label {
+  font-family: "Passion One", serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  color:white;
+}
+
+.content-label {
+  font-family: "Passion One", serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  color:white;
+}
+
+.author-label {
+  font-family: "Passion One", serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  color:white;
+}
+
+.content {
+  resize: none;
+  width:1500px;
+  height:400px;
+}
+
+.title {
+  width: 400px;
+}
+
+.author {
+  width:400px;
+  margin-bottom:10px;
+}
+
+#publish-button {
+  border-radius: 10px;
+  border: #B2A5FF solid 5px;
+  margin-bottom: 10px;
+  background-color:#FFFDF2 ;
+  font-family: "Passion One", serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding:5px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+#publish-button:hover {
+  background-color: #B2A5FF;
+  color:white;
+}
+
+#title-label {
+  font-family: "Passion One", serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  color:white;
+}
+
+

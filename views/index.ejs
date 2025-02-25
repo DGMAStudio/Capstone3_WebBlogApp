@@ -1,0 +1,53 @@
+<%-include("partials/header.ejs")%>
+<section id="home">
+    
+<div class="container px-4 py-5 all-posts" id="featured-3">
+    <%if (locals.posts) {%>
+        <ul class="posts-list">
+        <%for (var i = 0; i < posts.length; i++) {%>
+            <li class="list-item">
+            <div class="post-border">
+
+                <div class="feature col">
+                    <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                </div>
+
+                <div class="post-head">
+                <h3 class="fs-2 text-body-emphasis post-title"><%=posts[i].title%></</h3>
+                <hr/>
+                <p class="post-content"><%=posts[i].content%></p>
+                </div>
+
+                <div class="post-info">
+                    <small class="post-author">Written By: <%=posts[i].author%></small>
+                </div>
+
+                <div class="post-buttons">
+                    <form action="/create" method="POST">
+                        <input id="edit-button" type="submit" name="edit-button" value="EDIT #<%=i%>">
+                    </form>
+                    <form action="/delete" method="POST">
+                        <input id="delete-button" name="delete-button" type="submit" value="DELETE #<%=i%>">
+                    </form>
+                </div>
+            </div>
+        </div>
+        </li>
+        <%}%>
+        <div class="centered-button">
+            <form action="/create" method="GET">
+                <input type="submit" value="CREATE POST" class="create-post">
+            </form>
+        </div>
+    </ul>
+    <%} else {%>
+        <h1 class="no-post"> No Posts Available </h1>
+        <form action="/create" method="GET">
+            <input type="submit" value="CREATE POST" class="create-post">
+        </form>
+    <%}%>
+    </div>   
+    
+
+</section>
+<%-include("partials/footer.ejs")%>
